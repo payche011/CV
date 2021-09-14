@@ -166,6 +166,16 @@ h5 {
 }
 // Styles
 
+.project-links {
+  color: $clr--black;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 250ms;
+  &:hover {
+    color: $clr--primary-dark;
+  }
+}
+
 .container {
   position: relative;
   &__flex {

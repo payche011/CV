@@ -9,6 +9,12 @@ html {
   font-size: 62.5%;
   scrollbar-width: thin !important;
   scrollbar-color: #55c57a; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 130.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -122,52 +128,61 @@ h5 {
   font-size: 1.6rem;
   padding-left: 0.7rem; }
 
-.container__flex {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 4rem; }
-  @media (max-width: 768px) {
-    .container__flex {
-      flex-direction: column; } }
-  .container__flex--left {
-    flex: 0 0 25%; }
-    .container__flex--left > h4 {
-      font-style: italic; }
-  .container__flex--right {
-    flex: 1; }
-    .container__flex--right .tool-box {
-      display: inline-block;
-      background: #ffb900;
-      color: #011a24;
-      font-weight: 600;
-      letter-spacing: 1px;
-      padding: 1rem;
-      border-radius: 0.75rem;
-      user-select: none;
-      transition: 0.3s all;
-      margin-bottom: 1rem; }
-      .container__flex--right .tool-box:hover {
-        background: #7ed56f;
-        color: #fff; }
-    .container__flex--right .tasks {
-      position: relative;
-      padding-left: 2.5rem; }
-      .container__flex--right .tasks::before {
-        content: "";
-        width: 16px;
-        height: 16px;
-        background-image: url(./images/check.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 8px; }
+.project-links {
+  color: #011a24;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 250ms; }
+  .project-links:hover {
+    color: #28b485; }
 
-.container .skill-list {
-  padding-left: 2.5rem; }
-  .container .skill-list__item::marker {
-    color: #55c57a; }
+.container {
+  position: relative; }
+  .container__flex {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem; }
+    @media (max-width: 768px) {
+      .container__flex {
+        flex-direction: column; } }
+    .container__flex--left {
+      flex: 0 0 25%; }
+      .container__flex--left > h4 {
+        font-style: italic; }
+    .container__flex--right {
+      flex: 1; }
+      .container__flex--right .tool-box {
+        display: inline-block;
+        background: #ffb900;
+        color: #011a24;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        user-select: none;
+        transition: 0.3s all;
+        margin-bottom: 1rem; }
+        .container__flex--right .tool-box:hover {
+          background: #7ed56f;
+          color: #fff; }
+      .container__flex--right .tasks {
+        position: relative;
+        padding-left: 2.5rem; }
+        .container__flex--right .tasks::before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-image: url(./images/check.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 8px; }
+  .container .skill-list {
+    padding-left: 2.5rem; }
+    .container .skill-list__item::marker {
+      color: #55c57a; }
 
 .wrapper {
   max-width: 128rem;

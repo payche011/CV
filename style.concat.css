@@ -21,7 +21,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.265625rem) * 0.3153)), 1.8rem);
+  font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.265625rem) * 0.3153)), 1.7rem);
   color: #011a24; }
 
 a,
@@ -78,23 +78,23 @@ h3 {
   margin: 0; }
 
 h1 {
-  font-size: clamp(3rem, calc(3rem + ((1vw - 0.265625rem) * 1.5764)), 4rem);
+  font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.265625rem) * 1.8916)), 3.6rem);
   min-height: 0vw;
   text-align: center; }
 
 h2 {
-  font-size: clamp(3rem, calc(3rem + ((1vw - 0.265625rem) * 1.5764)), 4rem);
+  font-size: clamp(2.2rem, calc(2.2rem + ((1vw - 0.265625rem) * 1.5764)), 3.2rem);
   min-height: 0vw;
   color: #28b485; }
 
 h3 {
-  font-size: clamp(2rem, calc(2rem + ((1vw - 0.265625rem) * 0.6305)), 2.4rem);
+  font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.265625rem) * 0.6305)), 2.2rem);
   min-height: 0vw;
   margin-bottom: 1rem; }
 
 h4,
 h5 {
-  font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.265625rem) * 0.3153)), 1.8rem);
+  font-size: inherit;
   min-height: 0vw;
   font-weight: 400; }
 

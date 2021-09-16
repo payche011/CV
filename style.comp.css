@@ -22,7 +22,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.265625rem) * 0.3153)), 1.7rem);
-  color: #011a24; }
+  color: #011a24;
+  background: #fbfaf9; }
 
 a,
 a:active,
@@ -191,6 +192,7 @@ h5 {
   align-items: stretch;
   justify-content: space-between;
   box-shadow: 2px 4px 13px 0px #182d421c;
+  background: #fbfaf9;
   isolation: isolate; }
   @media (max-width: 768px) {
     .wrapper {

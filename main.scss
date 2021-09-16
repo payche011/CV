@@ -42,6 +42,7 @@ body {
     1.7rem
   );
   color: $clr--black;
+  background: rgba(251, 250, 249, 1);
 }
 
 a,
@@ -258,6 +259,7 @@ h5 {
   align-items: stretch;
   justify-content: space-between;
   box-shadow: 2px 4px 13px 0px #182d421c;
+  background: rgba(251, 250, 249, 1);
   isolation: isolate;
 
   @media (max-width: 768px) {

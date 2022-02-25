@@ -323,7 +323,7 @@ h5 {
     padding: 2rem;
     background: $clr--primary-light;
     border-radius: 5px;
-
+    height: min-content;
     @supports (position: sticky) or (position: -webkit-sticky) {
       @media (min-width: 1000px) {
         position: -webkit-sticky;
@@ -372,54 +372,6 @@ h5 {
         & > a {
           color: $clr--black;
         }
-      }
-    }
-  }
-}
-
-.modal-wrapper {
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 5;
-  inset: 0;
-  display: none;
-
-  & .modal-close {
-    color: $clr--black;
-    position: absolute;
-    right: 2rem;
-    top: 0;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  & .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: $clr--white;
-    box-shadow: 2px 4px 13px 0px #182d421c;
-    width: 100%;
-    max-width: 50%;
-    padding: 20px 30px;
-    text-align: center;
-    border-radius: 5px;
-
-    & > h3 {
-      position: relative;
-      color: $clr--white;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 10%;
-        background: $clr--primary;
-        width: 80%;
-        border-radius: 5px;
-        height: 40px;
-        z-index: -1;
       }
     }
   }
